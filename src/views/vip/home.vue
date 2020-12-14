@@ -1,19 +1,15 @@
 <template>
-  <div class="home">
+  <div>
     <el-container>
       <el-aside width="200px">
         <el-menu class="el-menu-vertical-demo" router>
-          <el-menu-item index="/index">
+          <el-menu-item index="/vip">
             <i class="el-icon-menu"></i>
-            <span slot="title">后台首页</span>
+            <span slot="title">会员页</span>
           </el-menu-item>
-          <el-menu-item index="/img">
+          <el-menu-item index="/vips">
             <i class="el-icon-document"></i>
-            <span slot="title">相册管理</span>
-          </el-menu-item>
-          <el-menu-item index="/imgs">
-            <i class="el-icon-setting"></i>
-            <span slot="title">相册1</span>
+            <span slot="title">会员列表页</span>
           </el-menu-item>
         </el-menu>
       </el-aside>
@@ -26,9 +22,8 @@
 </template>
 
 <script>
-import child from "../components/children";
+import child from "../../components/children";
 export default {
-  name: "Home",
   components: {
     child,
   },
